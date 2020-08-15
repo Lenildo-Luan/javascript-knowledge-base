@@ -34,17 +34,21 @@ As strings existem para podermos nos comunicar com outros através de textos. Ca
 
 ``` JavaScript
  "Olá\nmundo!" // Caractere especial
- // Saída: 
- // Olá
- // Mundo!
+/*
+ Saída:
+ Olá
+ Mundo!
+*/
 ```
 
 Nestas situações, o caractere `\` indica que o caractere a seguir é especial e torna possível que algo ocorra. Mas o contrário também é possível, caso  você use o `\` e o próximo caractere seja especial, ele perde seu efeito e se torna um caractere normal. O próprio `\` se inclui nisto.
 
 ``` JavaScript
- "Olá\"\\n\"mundo!" // Caractere especial
- // Saída: 
- // Olá "\n" mundo"
+ "Olá\"\\n\"mundo!" // Cancelando caractere especial
+/* 
+ Saída: 
+  Olá "\n" mundo"
+*/
 ```
 
 String escritas com aspas simples ou duplas são basicamente a mesma coisa, a unica diferença é que dentro das aspas simples você pode usar livremente as aspas duplas e vice-versa.
@@ -52,9 +56,11 @@ String escritas com aspas simples ou duplas são basicamente a mesma coisa, a un
 ``` JavaScript
  "''"
  '""'
- // Saída:
- // ''
- // ""
+ /*
+  Saída:
+  ''
+  ""
+ */
 ```
 
 Já as strings escritas com `` são chamadas de `template strings`, pois dentro delas é possível fazer algumas coisas interessantes, mas voltaremos a isso mais tarde.

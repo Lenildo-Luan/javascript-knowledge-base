@@ -10,7 +10,7 @@ Espero que Gostem :smile:
  
 ## Conteúdos
  
-1. **Introdução**
+1. **[Introdução](introduction/README.md)**
    - O que é JavaScript?
    - Como usar este repositório?
    - Executando códigos JavaScript
@@ -18,7 +18,7 @@ Espero que Gostem :smile:
    - [Números](types/README.md#Números)
    - [Strings](types/README.md#Strings)
    - [Booleanos](types/README.md#Booleanos)
-   - [Null e undefined](types/README.md#Null_e_undefined)
+   - [Null e undefined](types/README.md#Null-e-undefined)
  
 ## Contribua
  
