@@ -14,8 +14,11 @@ Espero que Gostem :smile:
    - O que é JavaScript?
    - Como usar este repositório?
    - Executando códigos JavaScript
-2. **Tipos de dados**
-   - Números
+2. **[Tipos de dados](types/README.md)**
+   - [Números](types/README.md#Números)
+   - [Strings](types/README.md#Strings)
+   - [Booleanos](types/README.md#Booleanos)
+   - [Null e undefined](types/README.md#Null_e_undefined)
  
 ## Contribua
  

@@ -9,3 +9,4 @@ console.log(NaN); // Notação científica
 console.log(" ");
 
 console.log("Strings");
+console.log('''');
