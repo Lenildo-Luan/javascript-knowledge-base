@@ -47,15 +47,15 @@ Nestas situações, o caractere `\` indica que o caractere a seguir é especial 
  "Olá\"\\n\"mundo!" // Cancelando caractere especial
 /* 
  Saída: 
-  Olá "\n" mundo"
+ Olá "\n" mundo"
 */
 ```
 
 String escritas com aspas simples ou duplas são basicamente a mesma coisa, a unica diferença é que dentro das aspas simples você pode usar livremente as aspas duplas e vice-versa.
 
 ``` JavaScript
- "''"
- '""'
+ "''" // Aspas simples dentro das duplas
+ '""' // Aspas duplsa dentro das simples
  /*
   Saída:
   ''
@@ -63,7 +63,7 @@ String escritas com aspas simples ou duplas são basicamente a mesma coisa, a un
  */
 ```
 
-Já as strings escritas com `` são chamadas de `template strings`, pois dentro delas é possível fazer algumas coisas interessantes, mas voltaremos a isso mais tarde.
+Já as strings escritas com `` são chamadas de *template strings*, pois dentro delas é possível fazer algumas coisas interessantes, mas voltaremos a isso mais tarde.
 
 ## Booleanos
 

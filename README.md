@@ -11,9 +11,9 @@ Espero que Gostem :smile:
 ## Conteúdos
  
 1. **[Introdução](introduction/README.md)**
-   - O que é JavaScript?
-   - Como usar este repositório?
-   - Executando códigos JavaScript
+   - [O que é JavaScript?](introduction/README.md#O-que-é-JavaScript)
+   - [Como usar este repositório?](introduction/README.md#Como-usar-este-repositório)
+   - [Executando códigos JavaScript](introduction/README.md#Como-executar-um-código-JavaScript)
 2. **[Tipos de dados](types/README.md)**
    - [Números](types/README.md#Números)
    - [Strings](types/README.md#Strings)
