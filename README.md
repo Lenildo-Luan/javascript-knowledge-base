@@ -19,6 +19,7 @@ Espero que Gostem :smile:
    - [Strings](types/README.md#Strings)
    - [Booleanos](types/README.md#Booleanos)
    - [Null e undefined](types/README.md#Null-e-undefined)
+3. **[Operadores](operators/README)**
  
 ## Contribua
  
