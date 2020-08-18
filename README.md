@@ -20,6 +20,7 @@ Espero que Gostem :smile:
    - [Booleanos](types/README.md#Booleanos)
    - [Null e undefined](types/README.md#Null-e-undefined)
 3. **[Operadores](operators/README.md)**
+   - [Matemáticos](operators/README.md#Matematicos)
  
 ## Contribua
  
