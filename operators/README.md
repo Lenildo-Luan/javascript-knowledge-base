@@ -8,17 +8,17 @@ Isto é bom, mas de longe suficiente. Para conseguir extrair a verdadeira utilid
 
 Os primeiros operadores que criamos foram os matemáticos. Com eles, é possível realizar as operações matemáticas necessárias para a grande maioria das situações. Para isso, desenvolvemos 5 operadores: soma `+`, subtração `-`, multiplicação `*`, divisão `/` e resto `%`.
 
-Para utiliza-los, basta colocar o operador no meio dos dois números que deseja realizar a operação e o resultado será o número a esquerda com o efeito do operador utilizando o número a direita.
+Para utilizá-los, basta colocar o operador no meio dos dois números que deseja realizar a operação e o resultado será o número a esquerda com o efeito do operador utilizando o número a direita.
 
 ``` javascript
 10 + 5
-// Saida: 10
+// Saída: 10
 10 - 5
-// Saida: 5
+// Saída: 5
 10 * 5
-// Saida: 50
+// Saída: 50
 10 / 5
-// Saida 2
+// Saída 2
 10 % 5
 // Saída: 0
 ```
@@ -27,16 +27,16 @@ Também seria muito bom se fosse possível utilizar mais de um operador por linh
 
 ``` javascript
 10 + 5 - 5
-// Saida: 10
+// Saída: 10
 10 + 5 * 5
-// Saida: 35
+// Saída: 35
 ```
 
-Porém, temos que criar algumas regras a cerca de quando tiver mais de um operador por linha. A primeira delas é qual operador deve ser executado primeiro. Aqui temos dois níveis de operadores, no exemplo acima, tanto faz executar a soma ou a subtração primeiro, ambas as formas resultarão no mesmo valor e o mesmo ocorre se fosse multiplicação no lugar da soma e divisão no lugar da subtração, a ordem não mudaria. Porém, quando há multiplicação ou divisão e soma ou subtração na mesma linha, as coisas podem ficar diferentes.
+Porém, temos que criar algumas regras acerca de quando tiver mais de um operador por linha. A primeira delas é qual operador deve ser executado primeiro. Aqui temos dois níveis de operadores, no exemplo acima, tanto faz executar a soma ou a subtração primeiro, ambas as formas resultarão no mesmo valor e o mesmo ocorre se fosse multiplicação no lugar da soma e divisão no lugar da subtração, a ordem não mudaria. Porém, quando há multiplicação ou divisão e soma ou subtração na mesma linha, as coisas podem ficar diferentes.
 
 Caso a primeira conta realizada fosse a soma, e posteriormente a multiplicação, no exemplo acima, o resultado seria 75, porém se a multiplicação ocorrer primeiro, o resultado seria 35. Então precisamos definir uma **precedência** acerca de qual operador deve ser executado primeiro, e a decisão é de que os operadores de multiplicação, divisão e resto serão executados primeiro, posteriormente, os de soma e subtração.
 
-Mas temos um problema, existêm situações onde podemos querer realizar uma soma ou uma subtração primeiro e depois realizar outra operação, como a de multiplicação, por exemplo. Precisamos definir uma estratégia para isto... Que tal cercarmos entre `()` o que queremos que seja executado primeiro?
+Mas temos um problema, existem situações onde podemos querer realizar uma soma ou uma subtração primeiro e depois realizar outra operação, como a de multiplicação, por exemplo. Precisamos definir uma estratégia para isto... Que tal cercar entre `()` o que queremos que seja executado primeiro?
 
 ``` javascript
 (10 + 5) * 5
