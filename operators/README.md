@@ -46,3 +46,33 @@ Mas temos um problema, existem situações onde podemos querer realizar uma soma
 Por último, temos que definir uma regra básica, a sequência em que as operações serão realizadas. Por exemplo, em uma conta com operações de mesmo nível, como `10 + 5 - 5` qual conta é realizada primeiro? Estamos somando 0 de 10 ou subtraindo 5 de 15? Isto é importante não só para contas maiores e complexas, como para definir um comportamento de como as coisas funcionam.
 
 Vamos definir então que a ordem de execução das operações é a mesma da que lemos, da esquerda para a direita, portanto, `10 + 5 - 5` é igual a `(10 + 5) - 5`. Respondendo a pergunta anterior então, estamos subtraindo 5 de 15.
+
+## Texto
+
+Os próximos operadores que temos que criar são os de texto. Estes são mais simples, existe basicamente uma operação que possa ser feito entre duas strings, a de concatenação. Isso diz respeito a transformar duas strings diferentes em uma única string.
+
+``` javascript
+ "Nanadaime" + " Hokage"
+ // Saída: Nanadaime Hokage
+```
+
+Agora vamos retomar a discução a respeito das *template strings*, que são as strings escritas entre com os *backtraces*. Imagine que queiramos escrever operações matemáticas dentro de uma string, como fariamos? Até o momento não temos formas de realizar este procedimento. Além disso, as *template strings* serão muito úteis em várias outras situações que encontraremos no futuro. Mas como elas nos aujudam a escrever expressões matemáticas dentro da string? da seguinte forma.
+
+``` javascript
+ `O resultado é ${10 + 5}!`
+ // Saída: O resultado é 15!
+```
+
+Ou seja, o que estiver dentro de `${}` será computado e seu resultado irá virar uma string. Outra funcionalidade muito boa das *template strings*, é que não é necessários ficar utilizando o `\n`, toda vez que se desejar quebrar uma linha, é possível fazer isso de forma muito mais fluida, como representado a seguir.
+
+``` javascript
+ `Tu te tornas eternamente responsável
+  por aquilo que cativas!`
+  /*
+  Saída:
+  Tu te tornas eternamente responsável
+  por aquilo que cativas!
+  */
+```
+
+Basta pular uma linha dentro da *template strings* escrevendo, que a quebra de linha já é automaticamente identificada.
