@@ -47,7 +47,7 @@ Por último, temos que definir uma regra básica, a sequência em que as operaç
 
 Vamos definir então que a ordem de execução das operações é a mesma da que lemos, da esquerda para a direita, portanto, `10 + 5 - 5` é igual a `(10 + 5) - 5`. Respondendo a pergunta anterior então, estamos subtraindo 5 de 15.
 
-## Texto
+## Textuais
 
 Os próximos operadores que temos que criar são os de texto. Estes são mais simples, existe basicamente uma operação que possa ser feito entre duas strings, a de concatenação. Isso diz respeito a transformar duas strings diferentes em uma única string.
 
@@ -56,7 +56,7 @@ Os próximos operadores que temos que criar são os de texto. Estes são mais si
  // Saída: Nanadaime Hokage
 ```
 
-Agora vamos retomar a discução a respeito das *template strings*, que são as strings escritas entre com os *backtraces*. Imagine que queiramos escrever operações matemáticas dentro de uma string, como fariamos? Até o momento não temos formas de realizar este procedimento. Além disso, as *template strings* serão muito úteis em várias outras situações que encontraremos no futuro. Mas como elas nos aujudam a escrever expressões matemáticas dentro da string? da seguinte forma.
+Agora vamos retomar a discussão a respeito das *template strings*, que são as strings escritas entre com os *backtraces*. Imagine que queiramos escrever operações matemáticas dentro de uma string, como faríamos? Até o momento não temos formas de realizar este procedimento. Além disso, as *template strings* serão muito úteis em várias outras situações que encontraremos no futuro. Mas como elas nos ajudam a escrever expressões matemáticas dentro da string? da seguinte forma.
 
 ``` javascript
  `O resultado é ${10 + 5}!`

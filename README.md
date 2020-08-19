@@ -21,6 +21,7 @@ Espero que Gostem :smile:
    - [Null e undefined](types/README.md#Null-e-undefined)
 3. **[Operadores](operators/README.md)**
    - [Matemáticos](operators/README.md#Matematicos)
+   - [Textuais](operators/README.md#Textuais)
  
 ## Contribua
  
