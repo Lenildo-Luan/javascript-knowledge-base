@@ -1,1 +1,1 @@
-
+console.log(NaN == NaN);

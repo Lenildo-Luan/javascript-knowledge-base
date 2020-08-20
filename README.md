@@ -22,6 +22,7 @@ Espero que Gostem :smile:
 3. **[Operadores](operators/README.md)**
    - [Matemáticos](operators/README.md#Matematicos)
    - [Textuais](operators/README.md#Textuais)
+   - [Comparação](operators/README.md#Comparação)
  
 ## Contribua
  
