@@ -79,11 +79,11 @@ Basta pular uma linha dentro da *template strings* escrevendo, que a quebra de l
 
 ## Comparação
 
-Ok, poder realizar operações matemáticas, concatenar strings e até realizar operações matemáticas dentro de strings é muito bom. Dá para fazer inúmeras coisas somente com essas invenções, porém, ainda faltam alguns temas a serem abordados. 
+Ok, poder realizar operações matemáticas, concatenar strings e até realizar operações matemáticas dentro de strings é muito bom. Dá para realizar inúmeras atividades somente com essas invenções, porém, ainda faltam alguns temas a serem abordados. 
 
 Imagine agora que tenhamos duas expressões matemáticas complicadas, que não sabemos a resposta, e queremos saber se uma é maior, menor ou igual a outra, ou até mesmo se elas são diferentes entre si. Ou seja, caso eu queira comparar dois valores, como eu posso fazer? Hmm, está na hora então de inventar os operadores de comparação.
 
-Estes valores estão diretamente ligados com o tipo booleano, e é aqui que eles brilham. Cada comparador ira testar uma condição entre as duas operações matemáticas e retornara `true` caso seja verdadeiro e  `false` caso seja falso, como visto a seguir. E as operadores são `<` menor que, `>` maior que, `!=` diferente, `==` igual e `===`;
+Estes valores estão diretamente ligados com o tipo booleano, e é aqui que eles brilham. Cada comparador irá testar uma condição entre as duas operações matemáticas e retornará `true` caso seja verdadeiro ou `false` caso seja falso. Os operadores são `<` menor que, `>` maior que, `!=` diferente, `==` igual e `===`.
 
 ``` javascript
  8 < 7
@@ -98,11 +98,11 @@ Estes valores estão diretamente ligados com o tipo booleano, e é aqui que eles
  // Saída: false
 ```
 
-Seria interessante se também poderiamos usar estes operadores para strings, assim poderiamos realizar comparações entre string para qualquer que seja o fim. Só que aqui a comparação ocorre através de uma lógica diferente, pois é um tipo diferente.
+Seria interessante se também pudéssemos usar esses operadores para strings, assim poderíamos realizar comparações entre strings para qualquer que seja o fim. Poreém a comparação ocorre através de uma lógica diferente, pois é um tipo diferente.
 
-> Para entender como funciona, você tem que lembrar que cada caractere tem um valor descrito em um [dicionário](pt.wikipedia.org/wiki/ASCII), que oferece uma combinação de bits para cada um deles. Essa combinação também pode ser interpretada como um número, oferecendo um valor para cada digito. 
+> Para entender como funciona, você tem que lembrar que cada caractere tem um valor descrito em um [dicionário](pt.wikipedia.org/wiki/ASCII), que oferece uma combinação de bits para cada um deles. Essa combinação também pode ser interpretada como um número, oferecendo um valor para cada dígito. 
 
-A lógica é a seguinte, quando usamos os operadores `<`ou `>`, irá ser checado o primeiro caractere da string, a depender do valor de ambos, a string como um todo será maior ou menor que a outra, idependente de quantos caracteres tenha a seguir. Caso os valores sejam iguais, será checado o segundo dígito, e assim por diante.
+A lógica é a seguinte, quando usamos os operadores `<`ou `>`, irá ser checado o primeiro caractere da string, a depender do valor de ambos, a string como um todo será maior ou menor que a outra, independente de quantos caracteres tenha a seguir. Caso os valores sejam iguais, será checado o segundo dígito, e assim por diante.
 
 ``` javascript
 'abc' < 'z'
@@ -111,32 +111,32 @@ A lógica é a seguinte, quando usamos os operadores `<`ou `>`, irá ser checado
 // Saída: false
 ```
 
-Quado se realizar uma comparação com os operadores `==`, `===` ou `!=`. Será checado se todos os dígitos são iguais, caso sejam, as strings são iguais, caso contrário, não. Assim, podemos conferir a seguir, que definitivamente pera e maçã não são a mesma coisa.
+Quando se realizar uma comparação com os operadores `==`, `===` ou `!=`. Será checado se todos os dígitos são iguais, caso sejam, as strings são iguais, caso contrário, não. Assim, podemos conferir a seguir, que definitivamente pera e maçã não são a mesma coisa.
 
 ``` javascript
-'pêra' == 'maça'
+'pêra' == 'maçã'
 // Saída: false
-'pêra' === 'maça'
+'pêra' === 'maçã'
 // Saída: false
-'pêra' != 'maça'
+'pêra' != 'maçã'
 // Saída: true
 ```
 
-A esta altura, talvez você esteja se perguntando, *mas qual a diferença entre o `==` e o `===`?* Bem, esta é uma das exentricidades da nossa criação. Exploraremos mais sobre este tópico no próximo capítulo, mas já adiantando, observe o seguinte cenário.
+A esta altura, talvez você esteja se perguntando, *mas qual a diferença entre o `==` e o `===`?* Bem, esta é uma das excentricidades da nossa criação. Exploraremos mais sobre este tópico no próximo capítulo, mas já adiantando, observe o seguinte cenário.
 
 ``` javascript
 '42' == 42
 // Saída: true
 ```
 
-Hmm... Ok, isto não deveria ocorrer, pois, além ambos serem de tipos completamente diferentes e sequer ser possível realizar esta comparação, o dígito 4 ou 2 em uma string tem valores numéricos diferentes de 42. Como eu faço então para poder realizar uma checagem mais precisa e livre deste tipo de erro? Utilizando justamente o `===`. Ele além checa primeiramente o tipo, se forem diferentes, a comparação já retorna `false` automaticamente.
+Hmm... Ok, isto não deveria ocorrer, pois, além ambos serem de tipos completamente diferentes e sequer ser possível realizar esta comparação, o dígito 4 ou 2 em uma string tem valores numéricos diferentes de 42. Como eu faço então para poder realizar uma checagem mais precisa e livre deste tipo de erro? Utilizando justamente o `===`. Ele checa primeiramente o tipo, se forem diferentes, a comparação já retorna `false` automaticamente.
 
 ``` javascript
 '42' === 42
 // Saída: false
 ```
 
-Outro detalhe interessante a cerca de comparações, é que o único valor que não é igual a ele mesmo é o `NaN`. Isto ocorre por que ele é o resultado de uma expressão matemática sem sentido e que não existe resposta na atualidade, como `0/0`. E aparentemente, uma coisa estranha é diferente de outra coisa estranha, pois ambas são estranhas e não há conhecimento disponível para sequer conseguir compara-las.
+Outro detalhe interessante a cerca de comparações, é que o único valor que não é igual a ele mesmo é o `NaN`. Isto ocorre por que ele é o resultado de uma expressão matemática sem sentido e que não existe resposta na atualidade, como `0/0`. E aparentemente, uma coisa estranha é diferente de outra coisa estranha, pois ambas são estranhas e não há conhecimento disponível para sequer conseguir compará-las.
 
 ``` javascript
 NaN == NaN
